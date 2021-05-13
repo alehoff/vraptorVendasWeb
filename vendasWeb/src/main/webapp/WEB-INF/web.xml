@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ <display-name>vraptor-blank-project</display-name>
+ <context-param>
+  <param-name>javax.servlet.jsp.jstl.fm.locale</param-name>
+  <param-value>pt_BR</param-value>
+ </context-param>
+ <context-param>
+  <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+  <param-value>messages</param-value>
+ </context-param>
+ <listener>
+  <listener-class>org.jboss.weld.environment.servlet.Listener</listener-class>
+ </listener>
+ <error-page>
+  <error-code>404</error-code>
+  <location>/erro/erro404.jsp</location>
+ </error-page>
+ <error-page>
+  <error-code>500</error-code>
+  <location>/erro/erro404.jsp</location>
+ </error-page>
+</web-app>
