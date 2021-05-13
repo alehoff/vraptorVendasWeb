@@ -34,6 +34,7 @@ public class CategoriaController {
 		this.result = result;
 		this.categoriaDao = categoriaDao;
 		this.paginacaoUtil = paginacaoUtil;
+		System.out.println("olá mundo");
 	}	
 
 	@Get
